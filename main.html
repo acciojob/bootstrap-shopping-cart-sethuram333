@@ -32,18 +32,16 @@
       margin-bottom: 20px;
     }
 
-    .summary .list-group-item {
-      border: none;
+    .summary .summary-item {
       padding: 10px 0;
+      border-bottom: 1px solid #dee2e6;
     }
 
-    .summary button {
+    .summary .btn {
       background-color: #3b99e0;
-      border: none;
-      padding: 10px;
-      width: 100%;
       color: white;
-      font-weight: 500;
+      width: 100%;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -53,20 +51,21 @@
 <div class="container mt-5">
 
   <!-- Block Heading -->
-  <div class="block-heading">
+  <div class="block-heading text-center">
     <h2>Shopping Cart</h2>
+    <p>Review your items before checkout</p>
   </div>
 
   <div class="row">
 
-    <!-- LEFT SIDE PRODUCTS -->
+    <!-- Products Section -->
     <div class="col-lg-8">
 
       <!-- Product 1 -->
       <div class="product">
         <div class="row align-items-center">
           <div class="col-md-3">
-            <img src="https://via.placeholder.com/150" class="img-fluid">
+            <img src="https://via.placeholder.com/150" class="img-fluid" alt="product">
           </div>
           <div class="col-md-5">
             <h5>I am very sorry</h5>
@@ -86,7 +85,7 @@
       <div class="product">
         <div class="row align-items-center">
           <div class="col-md-3">
-            <img src="https://via.placeholder.com/150" class="img-fluid">
+            <img src="https://via.placeholder.com/150" class="img-fluid" alt="product">
           </div>
           <div class="col-md-5">
             <h5>I am very sorry</h5>
@@ -106,7 +105,7 @@
       <div class="product">
         <div class="row align-items-center">
           <div class="col-md-3">
-            <img src="https://via.placeholder.com/150" class="img-fluid">
+            <img src="https://via.placeholder.com/150" class="img-fluid" alt="product">
           </div>
           <div class="col-md-5">
             <h5>I am very sorry</h5>
@@ -124,27 +123,32 @@
 
     </div>
 
-    <!-- RIGHT SIDE SUMMARY -->
+    <!-- Summary Section -->
     <div class="col-lg-4">
       <div class="summary">
         <h4>Summary</h4>
-        <div class="d-flex justify-content-between border-bottom pb-2">
+
+        <div class="summary-item d-flex justify-content-between">
           <span>Subtotal</span>
           <span>$360</span>
         </div>
-        <div class="d-flex justify-content-between border-bottom py-2">
+
+        <div class="summary-item d-flex justify-content-between">
           <span>Discount</span>
           <span>$0</span>
         </div>
-        <div class="d-flex justify-content-between border-bottom py-2">
+
+        <div class="summary-item d-flex justify-content-between">
           <span>Shipping</span>
           <span>$0</span>
         </div>
+
         <div class="d-flex justify-content-between pt-2">
           <strong>Total</strong>
           <strong>$360</strong>
         </div>
-        <button class="btn mt-4">Checkout</button>
+
+        <a href="#" class="btn">Checkout</a>
       </div>
     </div>
 
